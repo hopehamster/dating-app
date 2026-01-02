@@ -1,0 +1,6 @@
+connectorId: "default"
+generate:
+  dartSdk:
+    outputDir: "../../lib/dataconnect"
+    package: "values_matchmaking"
+

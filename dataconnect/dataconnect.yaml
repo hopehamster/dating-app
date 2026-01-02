@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "values-matchmaking-app"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "values_db"
+      cloudSql:
+        instanceId: "values-matchmaking-app:us-central1:values-db-instance"
+connectors:
+  - source: "./connector"

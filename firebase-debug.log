@@ -1,0 +1,168 @@
+[debug] [2026-01-02T12:20:03.102Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:20:03.105Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate
+[debug] [2026-01-02T12:20:03.105Z] CLI Version:   14.26.0
+[debug] [2026-01-02T12:20:03.105Z] Platform:      win32
+[debug] [2026-01-02T12:20:03.105Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:20:03.105Z] Time:          Fri Jan 02 2026 04:20:03 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:20:03.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:20:03.329Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:20:03.461Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:60:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:41:12)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:73:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:49:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:21:05.757Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:21:05.759Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only dataconnect
+[debug] [2026-01-02T12:21:05.760Z] CLI Version:   14.26.0
+[debug] [2026-01-02T12:21:05.760Z] Platform:      win32
+[debug] [2026-01-02T12:21:05.760Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:21:05.760Z] Time:          Fri Jan 02 2026 04:21:05 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:21:05.760Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:21:06.022Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:21:06.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-02T12:21:06.031Z] > authorizing via signed-in user (michael@sifter.cc)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-01-02T12:21:06.051Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-02T12:21:06.051Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-02T12:21:06.052Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-01-02T12:21:06.058Z] Emulator locator file path: C:\Users\Owner\AppData\Local\Temp\hub-demo-no-project.json
+[debug] [2026-01-02T12:21:06.058Z] [hub] writing locator at C:\Users\Owner\AppData\Local\Temp\hub-demo-no-project.json
+[info] i  dataconnect: downloading dataconnect-emulator-2.17.2.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.17.2.exe..."}}
+[debug] [2026-01-02T12:21:06.083Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v2.17.2 
+[debug] [2026-01-02T12:21:06.334Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v2.17.2 200
+[debug] [2026-01-02T12:21:06.335Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v2.17.2 [stream]
+[info] i  dataconnect: Removing outdated emulator files: dataconnect-emulator-2.15.0.exe {"metadata":{"emulator":{"name":"dataconnect"},"message":"Removing outdated emulator files: dataconnect-emulator-2.15.0.exe"}}
+[debug] [2026-01-02T12:21:14.482Z] defaultcredentials: writing to file C:\Users\Owner\AppData\Roaming\firebase\michael_sifter_cc_application_default_credentials.json
+[debug] [2026-01-02T12:21:14.696Z] I0102 04:21:14.663135   34896 control.go:94] [/emulator/values-matchmaking-app 0b74] UpdateResources(): done
+Main schema: sources: schema\schema.gql [1232B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0102 04:21:14.663135   34896 control.go:94] [/emulator/values-matchmaking-app 0b74] UpdateResources(): done\nMain schema: sources: schema\\schema.gql [1232B] \n"}}
+[debug] [2026-01-02T12:21:14.697Z] defaultcredentials: writing to file C:\Users\Owner\AppData\Roaming\firebase\michael_sifter_cc_application_default_credentials.json
+[debug] [2026-01-02T12:21:14.698Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-01-02T12:21:14.699Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2026-01-02T12:21:14.699Z] Starting Data Connect Emulator with command {"binary":"C:\\Users\\Owner\\.cache\\firebase\\emulators\\dataconnect-emulator-2.17.2.exe","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=C:\\Users\\Owner\\Documents\\ai dating app\\values_matchmaking_app\\dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"C:\\\\Users\\\\Owner\\\\.cache\\\\firebase\\\\emulators\\\\dataconnect-emulator-2.17.2.exe\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=C:\\\\Users\\\\Owner\\\\Documents\\\\ai dating app\\\\values_matchmaking_app\\\\dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2026-01-02T12:21:14.728Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  dataconnect: Stopping Data Connect Emulator {"metadata":{"emulator":{"name":"dataconnect"},"message":"Stopping Data Connect Emulator"}}
+[warn] !  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2026-01-02T12:21:14.737Z] Emulator locator file path: C:\Users\Owner\AppData\Local\Temp\hub-demo-no-project.json
+[debug] [2026-01-02T12:21:14.739Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2026-01-02T12:21:14.827Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:60:75)
+    at async DataConnectEmulator.start (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\dataconnectEmulator.js:64:26)
+    at async EmulatorRegistry.start (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\registry.js:19:9)
+    at async Object.startAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:597:9)
+    at async C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:34:43
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:21:21.623Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:21:21.627Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate
+[debug] [2026-01-02T12:21:21.627Z] CLI Version:   14.26.0
+[debug] [2026-01-02T12:21:21.627Z] Platform:      win32
+[debug] [2026-01-02T12:21:21.628Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:21:21.628Z] Time:          Fri Jan 02 2026 04:21:21 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:21:21.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:21:21.830Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:21:21.963Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:60:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:41:12)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:73:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:49:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:27:04.398Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:27:04.400Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate --debug
+[debug] [2026-01-02T12:27:04.400Z] CLI Version:   14.26.0
+[debug] [2026-01-02T12:27:04.401Z] Platform:      win32
+[debug] [2026-01-02T12:27:04.401Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:27:04.401Z] Time:          Fri Jan 02 2026 04:27:04 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:27:04.401Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:27:04.616Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:27:04.770Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:60:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:41:12)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:73:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:49:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:32:54.874Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:32:54.877Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate --debug
+[debug] [2026-01-02T12:32:54.877Z] CLI Version:   14.26.0
+[debug] [2026-01-02T12:32:54.877Z] Platform:      win32
+[debug] [2026-01-02T12:32:54.877Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:32:54.877Z] Time:          Fri Jan 02 2026 04:32:54 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:32:54.877Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:32:55.085Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:32:55.241Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:60:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:41:12)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:73:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:49:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:34:18.804Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:34:18.807Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate --debug
+[debug] [2026-01-02T12:34:18.808Z] CLI Version:   15.1.0
+[debug] [2026-01-02T12:34:18.808Z] Platform:      win32
+[debug] [2026-01-02T12:34:18.808Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:34:18.808Z] Time:          Fri Jan 02 2026 04:34:18 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:34:18.808Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:34:20.384Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:34:20.512Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:57:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:38:12)
+    at async pickServices (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:22:26)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:75:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:51:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:35:28.523Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:35:28.526Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate --debug
+[debug] [2026-01-02T12:35:28.526Z] CLI Version:   15.1.0
+[debug] [2026-01-02T12:35:28.526Z] Platform:      win32
+[debug] [2026-01-02T12:35:28.526Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:35:28.526Z] Time:          Fri Jan 02 2026 04:35:28 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:35:28.526Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:35:30.200Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2026-01-02T12:35:30.336Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:57:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:38:12)
+    at async pickServices (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:22:26)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:75:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:51:32)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-02T12:37:25.466Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:37:25.468Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js dataconnect:sdk:generate --debug
+[debug] [2026-01-02T12:37:25.469Z] CLI Version:   15.1.0
+[debug] [2026-01-02T12:37:25.469Z] Platform:      win32
+[debug] [2026-01-02T12:37:25.469Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:37:25.469Z] Time:          Fri Jan 02 2026 04:37:25 GMT-0800 (Pacific Standard Time)
+[debug] [2026-01-02T12:37:25.469Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:37:27.154Z] TypeError: Cannot read properties of undefined (reading 'map')
+    at load (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:57:75)
+    at async Promise.all (index 0)
+    at async loadAll (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:38:12)
+    at async pickServices (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\dataconnect\load.js:22:26)
+    at async loadAllWithSDKs (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:75:26)
+    at async Command.actionFn (C:\Users\Owner\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\dataconnect-sdk-generate.js:51:32)
+[error] 
+[error] Error: An unexpected error has occurred.

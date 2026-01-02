@@ -1,0 +1,53 @@
+
+type User @table {
+  id: String! @col(name: "id")
+  phoneNumber: String! @col(name: "phone_number")
+  subscriptionTier: String @col(name: "subscription_tier")
+  createdAt: Date! @default(expr: "request.time")
+}
+
+type UserProfile @table {
+  user: User! @ref
+  displayName: String!
+  photos: [String!]!
+  bio: String
+  preferences: String # JSON string for now
+  gender: String
+  orientation: String
+  birthYear: Int
+}
+
+type Question @table {
+  text: String!
+  type: String! # YES_NO, RANKED, SCALE
+  domainMappings: String # JSON string
+  isActive: Boolean! @default(value: true)
+}
+
+type Answer @table {
+  user: User! @ref
+  question: Question! @ref
+  response: String! # JSON value or simple string
+  answeredAt: Date! @default(expr: "request.time")
+}
+
+type Match @table {
+  userA: User! @ref
+  userB: User! @ref
+  compatibilityScore: Float!
+  status: String! # PENDING, ACCEPTED, REJECTED
+  createdAt: Date! @default(expr: "request.time")
+}
+
+type ChatThread @table {
+  match: Match! @ref
+  isActive: Boolean! @default(value: true)
+}
+
+type ChatMessage @table {
+  thread: ChatThread! @ref
+  sender: User! @ref
+  content: String!
+  sentAt: Date! @default(expr: "request.time")
+}
+

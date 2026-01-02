@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "values-matchmaking-app",
+          "appId": "1:453057516818:android:ece7a4d987e4c721d34fcb",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "values-matchmaking-app",
+          "configurations": {
+            "android": "1:453057516818:android:ece7a4d987e4c721d34fcb",
+            "web": "1:453057516818:web:e83a3fa85fcfe43ad34fcb"
+          }
+        }
+      }
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  },
+  "emulators": {
+    "dataconnect": {
+      "port": 9399
+    },
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "deepseek": {
+    "api_key": "sk-6ed39ede108647ff930b9532560ead6d",
+    "model": "deepseek-chat",
+    "enabled": false,
+    "note": "Set enabled to true to use DeepSeek instead of Gemini. Much cheaper (~90% cost savings)."
+  },
+  "gemini": {
+    "api_key": "",
+    "model": "gemini-1.5-pro",
+    "enabled": true,
+    "note": "Uses Firebase Application Default Credentials when deployed. API key only needed for local/VPS development."
+  },
+  "openai": {
+    "api_key": "",
+    "model": "gpt-4o",
+    "enabled": false,
+    "note": "Alternative option if needed in the future."
+  }
+}
+

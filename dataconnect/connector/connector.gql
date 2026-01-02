@@ -1,0 +1,16 @@
+
+query GetUserByPhone($phoneNumber: String!) @auth(level: PUBLIC) {
+  users(where: {phoneNumber: {eq: $phoneNumber}}) {
+    id
+    phoneNumber
+    subscriptionTier
+  }
+}
+
+mutation CreateUser($phoneNumber: String!) @auth(level: PUBLIC) {
+  user_insert(data: {
+    phoneNumber: $phoneNumber,
+    id: $phoneNumber # Using phone as ID for simplicity initially, or let DB generate
+  })
+}
+
